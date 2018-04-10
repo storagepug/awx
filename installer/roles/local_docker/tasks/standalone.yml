@@ -128,6 +128,8 @@
     hostname: awx
     dns_search_domains: "{{ awx_container_search_domains.split(',') if awx_container_search_domains is defined else omit }}"
     dns_servers: "{{ awx_alternate_dns_servers.split(',') if awx_alternate_dns_servers is defined else omit }}"
+    tmpfs:
+    - /pug:exec
     env:
       http_proxy: "{{ http_proxy | default('') }}"
       https_proxy: "{{ https_proxy | default('') }}"

@@ -31,8 +31,9 @@ dockerhub_version=latest
 # awx_task_mem_request=2
 
 # Common Docker parameters
-postgres_data_dir=/tmp/pgdocker
-host_port=80
+#postgres_data_dir=/tmp/pgdocker
+postgres_data_dir=/Users/storagepug/dev/db/pgdocker
+host_port=8052
 
 # Docker Compose Install
 # use_docker_compose=false
